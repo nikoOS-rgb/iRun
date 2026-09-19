@@ -1,0 +1,1239 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Diario de Ruta</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#6FA98D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Diario de Ruta">
+<style>
+  :root{
+    color-scheme:light;
+    --ground:#F3F1EC;
+    --panel:rgba(255,255,255,.72);
+    --panel-2:rgba(247,245,240,.60);
+    --line:rgba(21,32,29,.08);
+    --line-strong:rgba(21,32,29,.14);
+    --ink:#16211D;
+    --ink-dim:#5F6D67;
+    --ink-faint:#96A29C;
+    --accent:#6FA98D;
+    --accent-rgb:111,169,141;
+    --accent-soft:rgba(111,169,141,.13);
+    --accent-ink:#FFFFFF;
+    --font:'Manrope', -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --ease:cubic-bezier(.22,1,.36,1);
+    --spring:cubic-bezier(.34,1.56,.64,1);
+    --blur:22px;
+    --r-hero:20px;
+    --r-lg:18px;
+    --r-md:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme:dark;
+      --ground:#10181A;
+      --panel:rgba(24,34,37,.62);
+      --panel-2:rgba(30,42,44,.52);
+      --line:rgba(230,240,236,.07);
+      --line-strong:rgba(230,240,236,.14);
+      --ink:#F1F5F3;
+      --ink-dim:#90A19D;
+      --ink-faint:#56655F;
+      --accent:#8FC0AA;
+      --accent-rgb:143,192,170;
+      --accent-soft:rgba(var(--accent-rgb),.15);
+      --accent-ink:#0A1211;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --ground:#10181A;
+    --panel:rgba(24,34,37,.62);
+    --panel-2:rgba(30,42,44,.52);
+    --line:rgba(230,240,236,.07);
+    --line-strong:rgba(230,240,236,.14);
+    --ink:#F1F5F3;
+    --ink-dim:#90A19D;
+    --ink-faint:#56655F;
+    --accent:#8FC0AA;
+    --accent-rgb:143,192,170;
+    --accent-soft:rgba(var(--accent-rgb),.15);
+    --accent-ink:#0A1211;
+  }
+  *{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent;}
+  html{background:var(--ground);}
+  body{
+    background:
+      radial-gradient(620px 380px at 102% -10%, rgba(var(--accent-rgb),.14), transparent 62%),
+      radial-gradient(520px 340px at -12% 110%, rgba(var(--accent-rgb),.10), transparent 58%),
+      var(--ground);
+    color:var(--ink);
+    font-family:var(--font);
+    -webkit-font-smoothing:antialiased;
+    font-variant-numeric:tabular-nums;
+    min-height:100vh;
+    padding-block:1.75rem 3rem;
+    padding-inline:16px;
+    transition:color .3s var(--ease);
+  }
+  .icon{width:18px; height:18px; display:block;}
+  *{ transition:background-color .3s var(--ease), border-color .3s var(--ease); }
+
+  .frame{
+    position:relative; overflow:hidden;
+    max-width:430px; margin:0 auto;
+    background:linear-gradient(168deg, color-mix(in srgb, var(--ground) 88%, var(--accent) 6%), var(--ground) 55%, var(--ground) 130%);
+    border-radius:28px; border:1px solid var(--line);
+    padding:1.5rem 1.15rem 2rem;
+    box-shadow:0 44px 100px -46px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.03);
+  }
+  .frame::before{
+    content:''; position:absolute; inset:0; pointer-events:none; z-index:0;
+    background:radial-gradient(480px 260px at 108% -6%, rgba(var(--accent-rgb),.11), transparent 60%);
+  }
+  .frame > *{ position:relative; z-index:1; }
+
+  .topbar{display:flex; align-items:center; gap:8px; margin-bottom:1.75rem;}
+  nav{position:relative; flex:1; display:flex; gap:4px; background:var(--panel-2); backdrop-filter:blur(var(--blur)) saturate(160%); -webkit-backdrop-filter:blur(var(--blur)) saturate(160%); border-radius:14px; padding:4px; border:1px solid var(--line); overflow:hidden;}
+  .nav-indicator{
+    position:absolute; top:4px; bottom:4px; left:4px; width:0; border-radius:10px;
+    background:linear-gradient(155deg, color-mix(in srgb, var(--accent) 88%, white 12%), var(--accent));
+    transition:transform .42s var(--spring), width .42s var(--spring), background .3s var(--ease);
+    will-change:transform;
+  }
+  nav button{
+    position:relative; z-index:1;
+    flex:1; padding:10px 8px; border:none; background:transparent; color:var(--ink-dim);
+    font-family:var(--font); font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; border-radius:10px; cursor:pointer;
+    transition:color .3s var(--ease), transform .15s var(--spring);
+  }
+  nav button.active{ color:var(--accent-ink); }
+  nav button:active{ transform:scale(.95); }
+  .theme-toggle{
+    flex-shrink:0; width:38px; height:38px; border-radius:12px; background:var(--panel-2); backdrop-filter:blur(var(--blur)) saturate(160%); -webkit-backdrop-filter:blur(var(--blur)) saturate(160%); border:1px solid var(--line);
+    color:var(--ink-dim); cursor:pointer; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;
+    transition:border-color .3s var(--ease), color .3s var(--ease), transform .15s var(--spring);
+  }
+  .theme-toggle:hover{ border-color:var(--accent); color:var(--accent); }
+  .theme-toggle:active{ transform:scale(.9); }
+  .theme-toggle .icon{ width:17px; height:17px; position:absolute; transition:opacity .35s var(--ease), transform .5s var(--spring); }
+  .theme-toggle .i-sun{ opacity:0; transform:rotate(-60deg) scale(.5); }
+  .theme-toggle .i-moon{ opacity:1; transform:rotate(0) scale(1); }
+  [data-theme="light"] .theme-toggle .i-sun,
+  :root:not([data-theme="dark"]) .theme-toggle .i-sun{ opacity:1; transform:rotate(0) scale(1); }
+  [data-theme="light"] .theme-toggle .i-moon,
+  :root:not([data-theme="dark"]) .theme-toggle .i-moon{ opacity:0; transform:rotate(60deg) scale(.5); }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) .theme-toggle .i-sun{ opacity:0; transform:rotate(-60deg) scale(.5); }
+    :root:not([data-theme="light"]) .theme-toggle .i-moon{ opacity:1; transform:rotate(0) scale(1); }
+  }
+
+  .view{display:none;}
+  .view.active{display:block; animation:viewIn .38s var(--ease);}
+  @keyframes viewIn{from{opacity:0; transform:translateY(8px) scale(.985);} to{opacity:1; transform:translateY(0) scale(1);}}
+
+  @keyframes rowIn{from{opacity:0; transform:translateY(7px);} to{opacity:1; transform:translateY(0);}}
+
+  .section{margin-bottom:1.6rem;}
+  .section-head{margin-bottom:.6rem;}
+  .section-head h2{font-size:11px; font-weight:700; color:var(--ink-dim); text-transform:uppercase; letter-spacing:.09em;}
+  .section-sub{font-size:12px; color:var(--ink-faint); margin-top:-2px; margin-bottom:.6rem; font-weight:500;}
+
+  /* Superficie de cristal compartida por todas las tarjetas */
+  .ios-list, .card, .entry, .chart-wrap, .intro-card{
+    background:linear-gradient(165deg, color-mix(in srgb, var(--panel-2) 100%, var(--accent) 3%), var(--panel-2) 58%);
+    backdrop-filter:blur(var(--blur)) saturate(150%);
+    -webkit-backdrop-filter:blur(var(--blur)) saturate(150%);
+    border:1px solid var(--line);
+  }
+
+  /* Readout list */
+  .ios-list{border-radius:var(--r-lg); overflow:hidden;}
+  .ios-row{display:flex; align-items:center; gap:12px; padding:13px 15px; border-bottom:1px solid var(--line); animation:rowIn .4s var(--ease) both;}
+  .ios-row:nth-child(1){animation-delay:.02s;} .ios-row:nth-child(2){animation-delay:.05s;} .ios-row:nth-child(3){animation-delay:.08s;}
+  .ios-row:nth-child(4){animation-delay:.11s;} .ios-row:nth-child(5){animation-delay:.14s;} .ios-row:nth-child(6){animation-delay:.17s;}
+  .ios-row:nth-child(n+7){animation-delay:.19s;}
+  .ios-row:last-child{border-bottom:none;}
+  .ios-row .main{flex:1; min-width:0;}
+  .ios-row .main .t{font-size:14px; font-weight:700; color:var(--ink); line-height:1.3;}
+  .ios-row .main .s{font-size:11.5px; color:var(--ink-dim); margin-top:2px; line-height:1.45; font-weight:500;}
+  .ios-row .trail{font-family:var(--font); font-size:12px; color:var(--ink-dim); font-weight:600; text-align:right; flex-shrink:0; max-width:40%;}
+  .ios-row.hl{background:rgba(var(--accent-rgb),.07); border-left:2px solid var(--accent); padding-left:13px;}
+  .ios-row.hl .trail{color:var(--accent);}
+
+  .pill{display:inline-flex; align-items:center; padding:3px 9px; border-radius:6px; font-size:9px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; flex-shrink:0;}
+  .pill.base{background:transparent; border:1px solid var(--line-strong); color:var(--ink-dim);}
+  .pill.progreso, .pill.actual{background:linear-gradient(155deg, color-mix(in srgb, var(--accent) 88%, white 12%), var(--accent)); color:var(--accent-ink);}
+  .pill.descarga, .pill.cumplida{background:transparent; border:1px solid var(--accent); color:var(--accent);}
+  .pill.perdida{background:transparent; border:1px dashed var(--line-strong); color:var(--ink-faint);}
+
+  .callout{background:var(--panel-2); backdrop-filter:blur(var(--blur)) saturate(150%); -webkit-backdrop-filter:blur(var(--blur)) saturate(150%); border:1px solid var(--line); border-radius:var(--r-md); padding:12px 14px; font-size:12px; line-height:1.6; margin-top:.65rem; color:var(--ink-dim); font-weight:500;}
+  .callout b{color:var(--ink); font-weight:700;}
+  .callout ul{margin:6px 0 0 16px;}
+  .callout.warn{border-color:var(--accent); background:var(--accent-soft);}
+  .callout.warn b{color:var(--accent);}
+  .callout.flat{background:transparent; border:1px dashed var(--line-strong); backdrop-filter:none; -webkit-backdrop-filter:none;}
+  .callout.flat b{color:var(--ink);}
+
+  /* Hero / plan summary */
+  .intro-card{
+    position:relative; overflow:hidden;
+    border-radius:var(--r-hero); padding:1.2rem 1.2rem 1.3rem; margin-bottom:1.5rem;
+  }
+  .intro-card::before{
+    content:''; position:absolute; top:-40%; right:-20%; width:75%; height:75%;
+    background:radial-gradient(circle, rgba(var(--accent-rgb),.20), transparent 70%); pointer-events:none;
+  }
+  .hero-row{position:relative; display:flex; align-items:flex-start; justify-content:space-between; gap:10px; margin-bottom:16px;}
+  .hero-eyebrow{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.09em; color:var(--ink-dim); margin-bottom:4px;}
+  .hero-title{position:relative; font-size:20px; font-weight:700; letter-spacing:-0.01em; line-height:1.18; color:var(--ink);}
+  .icon-btn{
+    position:relative; width:32px; height:32px; border-radius:9px; background:transparent; border:1px solid var(--line-strong); color:var(--ink-dim);
+    cursor:pointer; flex-shrink:0; display:flex; align-items:center; justify-content:center;
+    transition:border-color .3s var(--ease), color .3s var(--ease), transform .18s var(--spring);
+  }
+  .icon-btn .icon{width:14px; height:14px;}
+  .icon-btn:hover{border-color:var(--accent); color:var(--accent);}
+  .icon-btn:active{transform:scale(.92);}
+
+  .stat-grid{position:relative; display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+  .stat-grid.three{grid-template-columns:1fr 1fr 1fr;}
+  .stat-card{
+    background:linear-gradient(165deg, color-mix(in srgb, var(--panel) 100%, var(--accent) 3%), var(--panel) 58%);
+    backdrop-filter:blur(var(--blur)) saturate(150%); -webkit-backdrop-filter:blur(var(--blur)) saturate(150%);
+    border:1px solid var(--line); border-radius:var(--r-md); padding:11px 12px; animation:rowIn .4s var(--ease) both;
+    transition:transform .18s var(--spring), background-color .3s var(--ease), border-color .3s var(--ease);
+  }
+  .stat-card:nth-child(1){animation-delay:.02s;} .stat-card:nth-child(2){animation-delay:.06s;} .stat-card:nth-child(3){animation-delay:.1s;} .stat-card:nth-child(4){animation-delay:.14s;} .stat-card:nth-child(5){animation-delay:.18s;} .stat-card:nth-child(6){animation-delay:.22s;}
+  .stat-card:active{transform:scale(.97);}
+  .stat-card .top{display:flex; align-items:center; gap:6px; margin-bottom:7px; color:var(--ink-faint);}
+  .stat-card .top .icon{width:13px; height:13px;}
+  .stat-card .lbl{font-size:9px; color:var(--ink-dim); font-weight:700; text-transform:uppercase; letter-spacing:.06em;}
+  .stat-card .val{font-family:var(--font); font-size:16px; font-weight:700; letter-spacing:-.01em; color:var(--ink);}
+
+  .scroll-wrap{position:relative;}
+  .ios-list.scroll{max-height:340px; overflow-y:auto; -webkit-overflow-scrolling:touch; scroll-behavior:smooth;}
+  .ios-list.scroll::-webkit-scrollbar{width:4px;}
+  .ios-list.scroll::-webkit-scrollbar-thumb{background:var(--line-strong); border-radius:3px;}
+  .scroll-wrap::after{
+    content:''; position:absolute; left:0; right:0; bottom:0; height:26px;
+    background:linear-gradient(to bottom, transparent, var(--panel-2)); border-radius:0 0 var(--r-lg) var(--r-lg); pointer-events:none;
+  }
+  .week-row .wk-n{font-family:var(--font); font-size:10.5px; color:var(--ink-faint); width:52px; flex-shrink:0; font-weight:500;}
+  .week-row .wk-km{flex:1; font-family:var(--font); font-size:14px; font-weight:700; color:var(--ink);}
+
+  .info-cards .ios-row{cursor:pointer;}
+  .info-cards .ios-row:hover{background:rgba(255,255,255,.02);}
+  .ic{width:30px; height:30px; border-radius:9px; background:var(--panel); border:1px solid var(--line); color:var(--ink-dim); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .ic .icon{width:15px; height:15px;}
+  .chev{color:var(--ink-faint); flex-shrink:0; display:flex;}
+  .chev .icon{width:15px; height:15px;}
+
+  /* Overlays / modals */
+  .overlay{
+    position:fixed; inset:0; background:rgba(4,5,6,.55); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+    display:none; align-items:flex-start; justify-content:center; padding:2rem 1rem; z-index:200; overflow-y:auto;
+    opacity:0; transition:opacity .28s var(--ease), background-color .3s var(--ease);
+  }
+  .overlay.active{display:flex; opacity:1;}
+  .overlay.active .modal-box{ animation:modalIn .38s var(--spring); }
+  @keyframes modalIn{from{opacity:0; transform:translateY(14px) scale(.96);} to{opacity:1; transform:translateY(0) scale(1);}}
+  .modal-box{
+    background:linear-gradient(165deg, color-mix(in srgb, var(--panel) 100%, var(--accent) 3%), var(--panel) 62%);
+    backdrop-filter:blur(28px) saturate(160%); -webkit-backdrop-filter:blur(28px) saturate(160%);
+    border:1px solid var(--line-strong); border-radius:22px; padding:1.4rem; max-width:440px; width:100%; margin:auto 0; position:relative;
+    box-shadow:0 40px 90px -40px rgba(0,0,0,.85);
+  }
+  .modal-box h2{font-size:18px; font-weight:700; letter-spacing:-.01em; margin-bottom:5px; color:var(--ink);}
+  .modal-box .sub{font-size:12px; color:var(--ink-dim); line-height:1.55; margin-bottom:1.3rem; font-weight:500;}
+  .modal-close{
+    position:absolute; top:14px; right:14px; background:transparent; border:1px solid var(--line-strong);
+    color:var(--ink-dim); width:26px; height:26px; border-radius:8px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+    transition:border-color .3s var(--ease), color .3s var(--ease), transform .18s var(--spring);
+  }
+  .modal-close:hover{border-color:var(--accent); color:var(--accent);}
+  .modal-close:active{transform:scale(.9);}
+  .modal-close .icon{width:12px; height:12px;}
+  .info-modal .modal-box{max-width:520px;}
+  .info-modal .modal-box h2{display:flex; align-items:center; gap:9px; font-size:15px; padding-right:28px;}
+
+  .field-label{font-size:10px; font-weight:700; color:var(--ink-dim); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px;}
+  .field-sub{font-size:11.5px; color:var(--ink-faint); margin:-4px 0 8px; line-height:1.5; font-weight:500;}
+  .field-block{margin-bottom:1.15rem;}
+  .goal-question{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:1.15rem;}
+
+  .stepper{display:flex; align-items:center; justify-content:center; gap:16px; background:var(--panel-2); backdrop-filter:blur(var(--blur)) saturate(150%); -webkit-backdrop-filter:blur(var(--blur)) saturate(150%); border:1px solid var(--line); border-radius:var(--r-md); padding:10px;}
+  .step-btn{
+    width:25px; height:25px; border-radius:7px; background:var(--panel); border:1px solid var(--line-strong); color:var(--ink);
+    cursor:pointer; display:flex; align-items:center; justify-content:center;
+    transition:border-color .3s var(--ease), transform .18s var(--spring);
+  }
+  .step-btn:hover{border-color:var(--accent); color:var(--accent);}
+  .step-btn:active{transform:scale(.88);}
+  .step-btn .icon{width:13px; height:13px;}
+  .step-val{font-family:var(--font); font-size:17px; font-weight:700; min-width:40px; text-align:center; color:var(--ink);}
+
+  .time-row{display:flex; align-items:center; justify-content:space-between; gap:6px; background:var(--panel-2); backdrop-filter:blur(var(--blur)) saturate(150%); -webkit-backdrop-filter:blur(var(--blur)) saturate(150%); border:1px solid var(--line); border-radius:var(--r-md); padding:10px;}
+  .time-col{display:flex; align-items:baseline; gap:4px; flex:1; justify-content:center;}
+  .time-col input{width:30px; background:transparent; border:none; color:var(--ink); font-family:var(--font); font-size:14px; font-weight:700; text-align:right; padding:0; -moz-appearance:textfield;}
+  .time-col input::-webkit-outer-spin-button, .time-col input::-webkit-inner-spin-button{-webkit-appearance:none; margin:0;}
+  .time-col span{font-size:10px; color:var(--ink-faint); font-weight:600;}
+
+  .goal-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:1.15rem;}
+  .goal-card{background:var(--panel-2); backdrop-filter:blur(var(--blur)) saturate(150%); -webkit-backdrop-filter:blur(var(--blur)) saturate(150%); border:1px solid var(--line-strong); border-radius:var(--r-md); padding:11px 12px; cursor:pointer; transition:background-color .3s var(--ease), border-color .3s var(--ease), transform .18s var(--spring);}
+  .goal-card:active{transform:scale(.96);}
+  .goal-card.full{grid-column:1 / -1;}
+  .goal-card b{display:block; font-size:12.5px; font-weight:700; color:var(--ink);}
+  .goal-card span{display:block; font-size:11px; color:var(--ink-dim); margin-top:2px; font-weight:500;}
+  .goal-card.selected{ background:linear-gradient(155deg, color-mix(in srgb, var(--accent) 88%, white 12%), var(--accent)); border-color:var(--accent); }
+  .goal-card.selected b, .goal-card.selected span{color:var(--accent-ink);}
+
+  .btn{
+    width:100%; background:linear-gradient(155deg, color-mix(in srgb, var(--accent) 88%, white 12%), var(--accent)); color:var(--accent-ink); border:none; font-family:var(--font);
+    font-size:14px; font-weight:700; padding:13px; border-radius:var(--r-md); cursor:pointer; letter-spacing:-.005em;
+    transition:transform .18s var(--spring), filter .18s var(--ease);
+  }
+  .btn:hover{filter:brightness(1.07);}
+  .btn:active{transform:scale(.98);}
+  .btn-ghost{
+    width:100%; background:transparent; border:1px solid var(--line-strong); color:var(--ink); font-family:var(--font);
+    font-size:13px; font-weight:600; padding:11.5px; border-radius:var(--r-md); cursor:pointer; margin-top:9px;
+    transition:border-color .3s var(--ease), color .3s var(--ease), transform .18s var(--spring);
+  }
+  .btn-ghost:hover{border-color:var(--accent); color:var(--accent);}
+  .btn-ghost:active{transform:scale(.97);}
+
+  /* Diario */
+  .card{border-radius:var(--r-lg); padding:1.15rem;}
+  .form-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px;}
+  .form-grid .full{grid-column:1 / -1;}
+  label{display:block; font-size:10px; font-weight:700; color:var(--ink-dim); margin-bottom:5px; text-transform:uppercase; letter-spacing:.06em;}
+  input, select, textarea{
+    width:100%; background:var(--panel); border:1px solid var(--line-strong); color:var(--ink);
+    font-family:var(--font); font-size:13px; padding:9px 10px; border-radius:9px; outline:none; font-weight:500;
+  }
+  input:focus, select:focus, textarea:focus{border-color:var(--accent);}
+  textarea{resize:vertical; min-height:50px; font-weight:500;}
+
+  .entries{margin-top:1.5rem; display:flex; flex-direction:column; gap:10px;}
+  .entry{border-radius:var(--r-md); padding:12px 14px; display:flex; align-items:center; gap:12px; animation:rowIn .4s var(--ease) both;}
+  .entry:nth-child(1){animation-delay:.02s;} .entry:nth-child(2){animation-delay:.05s;} .entry:nth-child(3){animation-delay:.08s;}
+  .entry:nth-child(4){animation-delay:.11s;} .entry:nth-child(5){animation-delay:.14s;} .entry:nth-child(n+6){animation-delay:.17s;}
+  .entry .km-box{width:48px; height:48px; border-radius:10px; background:var(--panel); border:1px solid var(--line-strong); color:var(--ink); display:flex; flex-direction:column; align-items:center; justify-content:center; flex-shrink:0;}
+  .entry .km-box b{font-family:var(--font); font-size:14px; line-height:1; font-weight:700;}
+  .entry .km-box span{font-size:8px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.04em; font-weight:600; margin-top:2px;}
+  .entry .info{flex:1; min-width:0;}
+  .entry .info .top{display:flex; align-items:center; gap:6px; font-size:12px; font-weight:700; color:var(--ink); flex-wrap:wrap;}
+  .entry .info .top .date{font-family:var(--font); color:var(--ink-dim); font-weight:600;}
+  .entry .info .top .ritmo{color:var(--accent);}
+  .entry .info .notas{font-size:11.5px; color:var(--ink-dim); margin-top:2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-weight:500;}
+  .entry .del{background:transparent; border:none; color:var(--ink-faint); cursor:pointer; padding:4px 6px; display:flex; align-items:center; transition:color .3s var(--ease), transform .18s var(--spring);}
+  .entry .del .icon{width:15px; height:15px;}
+  .entry .del:hover{color:var(--accent);}
+  .entry .del:active{transform:scale(.85);}
+  .empty{text-align:center; color:var(--ink-faint); font-size:12px; padding:2rem 1rem; font-weight:500;}
+
+  .chart-wrap{border-radius:var(--r-lg); padding:1.1rem; margin-bottom:1.5rem;}
+  .chart-wrap h3{font-size:10px; color:var(--ink-dim); font-weight:700; text-transform:uppercase; letter-spacing:.07em;}
+  .chart-head{display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:.75rem;}
+  .metric-toggle{display:flex; gap:4px; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:3px; flex-shrink:0;}
+  .metric-btn{border:none; background:transparent; color:var(--ink-dim); font-family:var(--font); font-size:10.5px; font-weight:700; padding:5px 10px; border-radius:7px; cursor:pointer; text-transform:uppercase; letter-spacing:.04em; transition:background-color .3s var(--ease), color .3s var(--ease);}
+  .metric-btn.active{background:linear-gradient(155deg, color-mix(in srgb, var(--accent) 88%, white 12%), var(--accent)); color:var(--accent-ink);}
+  svg text{font-family:var(--font);}
+
+  @media(max-width:420px){
+    .form-grid{grid-template-columns:1fr;}
+    .goal-question{grid-template-columns:1fr;}
+    .stat-grid.three{grid-template-columns:1fr 1fr;}
+  }
+</style>
+<div class="frame">
+
+  <div class="topbar">
+    <nav>
+      <div class="nav-indicator" id="nav-indicator"></div>
+      <button class="tab-btn active" data-view="plan">Plan</button>
+      <button class="tab-btn" data-view="diario">Diario</button>
+      <button class="tab-btn" data-view="progreso">Progreso</button>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" title="Cambiar tema" aria-label="Cambiar tema">
+      <svg class="icon i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+      <svg class="icon i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.6 6.6 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+
+  <!-- ================= PLAN ================= -->
+  <div class="view active" id="view-plan">
+
+    <div class="intro-card" id="plan-intro"></div>
+
+    <div class="section">
+      <div class="section-head"><h2>Tu progresión</h2></div>
+      <div class="section-sub" id="progresion-sub">Se arma en base a lo que corrés hoy y tu objetivo.</div>
+      <div class="scroll-wrap">
+        <div class="ios-list scroll" id="progresion-body"></div>
+      </div>
+      <div id="progresion-callout"></div>
+    </div>
+
+    <div class="section">
+      <div class="section-head"><h2>Guía de entrenamiento</h2></div>
+      <div class="section-sub">Tocá un tema para ver el detalle.</div>
+      <div class="ios-list info-cards" id="info-cards"></div>
+    </div>
+
+    <div class="callout flat">
+      <b>Cómo usar esta planilla</b>
+      <div style="margin-top:6px;">Cada semana: 1) Mirás tu última distancia. 2) Decidís si subís, repetís o descargás. 3) Elegís el sábado según cómo estés.</div>
+    </div>
+
+  </div>
+
+  <!-- ================= DIARIO ================= -->
+  <div class="view" id="view-diario">
+    <div class="card">
+      <div class="form-grid">
+        <div>
+          <label>Fecha</label>
+          <input type="date" id="f-fecha">
+        </div>
+        <div>
+          <label>Distancia (km)</label>
+          <input type="number" step="0.1" min="0" id="f-km" placeholder="8">
+        </div>
+        <div class="full">
+          <label>Tiempo (opcional, para el ritmo)</label>
+          <div class="time-row">
+            <div class="time-col"><input type="number" min="0" max="23" id="f-th" placeholder="0"><span>h</span></div>
+            <div class="time-col"><input type="number" min="0" max="59" id="f-tm" placeholder="0"><span>min</span></div>
+            <div class="time-col"><input type="number" min="0" max="59" id="f-ts" placeholder="0"><span>seg</span></div>
+          </div>
+        </div>
+        <div>
+          <label>Tipo</label>
+          <select id="f-tipo">
+            <option>Fondo largo</option>
+            <option>Rodaje suave</option>
+            <option>Fartlek</option>
+            <option>Tempo</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div>
+          <label>Sensación</label>
+          <select id="f-sensacion">
+            <option value="Muy bien">Muy bien</option>
+            <option value="Bien">Bien</option>
+            <option value="Normal">Normal</option>
+            <option value="Duro">Duro</option>
+            <option value="Muy duro">Muy duro</option>
+          </select>
+        </div>
+        <div class="full">
+          <label>Notas</label>
+          <textarea id="f-notas" placeholder="Clima, dolores, sensaciones, ruta..."></textarea>
+        </div>
+      </div>
+      <button class="btn" id="btn-add">Guardar entrenamiento</button>
+    </div>
+
+    <div class="entries" id="entries-list"></div>
+  </div>
+
+  <!-- ================= PROGRESO ================= -->
+  <div class="view" id="view-progreso">
+    <div class="stat-grid three" style="margin-bottom:1.25rem;" id="progreso-stats"></div>
+    <div class="chart-wrap">
+      <div class="chart-head">
+        <h3 id="chart-title">Evolución del fondo largo</h3>
+        <div class="metric-toggle" id="metric-toggle">
+          <button type="button" class="metric-btn active" data-metric="km">Km</button>
+          <button type="button" class="metric-btn" data-metric="ritmo">Ritmo</button>
+        </div>
+      </div>
+      <svg id="chart-svg" viewBox="0 0 680 220" width="100%" height="220"></svg>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ OVERLAY: Ajustar plan / metas (onboarding) ============ -->
+<div class="overlay" id="goal-overlay">
+  <div class="modal-box">
+    <h2>Ajustar tu plan</h2>
+    <div class="sub">Contanos tu punto de partida y tu objetivo. El plan se arma en base a eso — y no tiene techo: sigue creciendo con vos.</div>
+
+    <div class="field-block">
+      <div class="field-label">¿Cuánto corrés hoy?</div>
+      <div class="goal-question">
+        <div>
+          <label style="margin-bottom:6px;">Distancia (km)</label>
+          <div class="stepper">
+            <button type="button" class="step-btn" id="km-minus"></button>
+            <div class="step-val" id="km-val">5</div>
+            <button type="button" class="step-btn" id="km-plus"></button>
+          </div>
+        </div>
+        <div>
+          <label style="margin-bottom:6px;">Tiempo (opcional)</label>
+          <div class="time-row">
+            <div class="time-col"><input type="number" min="0" max="23" id="t-h" value="0"><span>h</span></div>
+            <div class="time-col"><input type="number" min="0" max="59" id="t-m" value="0"><span>min</span></div>
+            <div class="time-col"><input type="number" min="0" max="59" id="t-s" value="0"><span>seg</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field-block">
+      <div class="field-label">¿Cuál es tu objetivo?</div>
+      <div class="goal-grid" id="goal-grid"></div>
+    </div>
+
+    <div class="field-block" style="margin-bottom:1.1rem;">
+      <div class="field-label">Fecha objetivo (opcional)</div>
+      <div class="field-sub">Si tenés una carrera en mente, elegí la fecha para ver si llegás a tiempo.</div>
+      <input type="date" id="goal-fecha">
+    </div>
+
+    <button class="btn" id="btn-guardar-plan">Guardar y arrancar</button>
+    <button class="btn-ghost" id="btn-omitir-plan">Omitir por ahora</button>
+  </div>
+</div>
+
+<!-- ============ OVERLAY: popup de info de la guía ============ -->
+<div class="overlay info-modal" id="info-overlay">
+  <div class="modal-box">
+    <button class="modal-close" id="info-close"></button>
+    <h2 id="info-title"></h2>
+    <div id="info-body"></div>
+  </div>
+</div>
+
+<script>
+/* ===================== Sistema de íconos (línea, monocromo) ===================== */
+const ICONS = {
+  layers: '<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>',
+  bolt: '<polygon points="13 2 4 14 12 14 11 22 20 10 12 10 13 2"/>',
+  sliders: '<line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>',
+  calendar: '<rect x="3" y="4" width="18" height="18" rx="3"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
+  battery: '<rect x="2" y="7" width="17" height="10" rx="2"/><line x1="22" y1="10" x2="22" y2="14"/><line x1="6" y1="10" x2="6" y2="14"/>',
+  trending: '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',
+  flag: '<path d="M5 21V4"/><path d="M5 4s1.2-1 4-1 4.5 2 7.5 2 3.5-1 3.5-1v10s-1 1-3.5 1-4.5-2-7.5-2-4 1-4 1"/>',
+  target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 16 14"/>',
+  stopwatch: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/><path d="M12 2v3"/>',
+  bars: '<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>',
+  mountain: '<path d="M3 20l5.5-9 3.5 5 2.5-3.5L21 20z"/>',
+  edit: '<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/>',
+  x: '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>',
+  chevronRight: '<polyline points="9 18 15 12 9 6"/>',
+  plus: '<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>',
+  minus: '<line x1="5" y1="12" x2="19" y2="12"/>',
+  trash: '<polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/>',
+};
+function svgIcon(name){
+  return `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICONS[name]}</svg>`;
+}
+document.getElementById('km-minus').innerHTML = svgIcon('minus');
+document.getElementById('km-plus').innerHTML = svgIcon('plus');
+document.getElementById('info-close').innerHTML = svgIcon('x');
+
+/* ===================== Diario: estado (declarado temprano porque el Plan lo necesita) ===================== */
+const STORAGE_KEY = 'running-diary:entries';
+let entries = [];
+
+/* ===================== Helpers de UI ===================== */
+function iosList(rows, extraClass){
+  return `<div class="ios-list${extraClass?' '+extraClass:''}">` + rows.map(r=>
+    `<div class="ios-row${r.hl?' hl':''}">
+      <div class="main"><div class="t">${r.t}</div>${r.s?`<div class="s">${r.s}</div>`:''}</div>
+      ${r.trail?`<div class="trail">${r.trail}</div>`:''}
+    </div>`
+  ).join('') + `</div>`;
+}
+
+/* ===================== Guía de entrenamiento (contenido de referencia) ===================== */
+const INFO_SECTIONS = [
+  {
+    id:'tipos', icon:'layers', title:'Tipos de entrenamiento', desc:'Rodaje, fartlek, tempo y fondo largo',
+    html: iosList([
+      {t:'Rodaje suave', s:'30–45 min continuos · Cansancio / semanas cargadas', trail:'Baja'},
+      {t:'Fartlek', s:'1 min rápido / 2 min suave × 5–6 · Cuando estás bien', trail:'Media'},
+      {t:'Tempo', s:'10 min suave + 10–20 min exigente + 5 min suave · Cuando estás fuerte', trail:'Media-alta'},
+      {t:'Fondo largo', s:'5–20 km continuo · Todos los domingos', trail:'Baja'},
+    ]) + `<div class="callout"><b>Tip clave:</b> en el fondo largo siempre tiene que poder hablarse. No es sprint, es ritmo sostenido.</div>`
+  },
+  {
+    id:'velocidad', icon:'bolt', title:'Cómo ganar velocidad', desc:'Series, cuestas, progresivos y técnica',
+    html: `<div class="section-sub" style="margin:0 0 8px;">Se suma recién cuando el fondo ya viene estable, 1 sesión por semana como mucho.</div>` +
+      iosList([
+        {t:'Series cortas', s:'200–400 m fuerte + trote suave × 6–10 — Velocidad pura y economía de carrera'},
+        {t:'Cuestas', s:'Subir fuerte 15–20 seg × 6–8, bajar trotando — Potencia, fuerza y zancada'},
+        {t:'Progresivos', s:'Acelerar gradual los últimos 5–10 min de un rodaje — Piernas cansadas'},
+        {t:'Técnica / cadencia', s:'Skipping, taloneo, 170–180 pasos/min — Eficiencia energética'},
+      ]) +
+      `<div class="callout">
+        <b>Reglas para meter velocidad sin lesionarte</b>
+        <ul>
+          <li>Nunca en semana de descarga</li>
+          <li>Siempre con 10 min de entrada en calor antes</li>
+          <li>Empezá con series cortas y pocas repeticiones, después sumás</li>
+          <li>El fondo largo del domingo sigue mandando: la velocidad es un extra, no lo reemplaza</li>
+        </ul>
+      </div>`
+  },
+  {
+    id:'reglas', icon:'sliders', title:'Reglas del plan', desc:'Progresión, descarga, ritmo y prioridades',
+    html: iosList([
+      {t:'Progresión', s:'+1 km por semana en el fondo (se ajusta a tu objetivo)'},
+      {t:'Descarga', s:'Cada 3–4 semanas, bajar 15–20%'},
+      {t:'Ritmo fondo', s:'Siempre cómodo, tenés que poder hablar'},
+      {t:'Prioridad', s:'El fondo del domingo manda'},
+      {t:'Sábado', s:'Flexible, según cómo llegues de energía'},
+      {t:'Si fallás sábado', s:'No pasa nada'},
+      {t:'Si fallás domingo', s:'Repetís la misma distancia la semana siguiente'},
+      {t:'Dolor', s:'Si cambia la pisada → parar'},
+    ])
+  },
+  {
+    id:'semana', icon:'calendar', title:'Estructura semanal', desc:'Qué hacer el sábado y el domingo',
+    html: iosList([
+      {t:'Sábado', s:'Entrenamiento corto · Rodaje / Fartlek / Tempo'},
+      {t:'Domingo', s:'Fondo largo · Según tu progresión'},
+    ])
+  },
+  {
+    id:'sabado', icon:'battery', title:'Cómo elegir el sábado', desc:'Según cómo llegues de energía',
+    html: iosList([
+      {t:'Muy cansado', trail:'Rodaje suave'},
+      {t:'Normal', trail:'Fartlek'},
+      {t:'Con energía', trail:'Tempo'},
+    ])
+  },
+  {
+    id:'mes', icon:'trending', title:'Progresión por mes (ejemplo)', desc:'De 8 km a 21 km en un plan de medio maratón',
+    html: `<div class="section-sub" style="margin:0 0 8px;">Ejemplo orientativo de cómo se ve un plan largo mes a mes. El tuyo se arma según tu punto de partida y tu fecha.</div>` +
+      iosList([
+        {t:'Mes 1', trail:'8–9 km'},
+        {t:'Mes 2', trail:'10–12 km'},
+        {t:'Mes 3', trail:'13–14 km'},
+        {t:'Mes 4', trail:'15–16 km'},
+        {t:'Mes 5', trail:'17–18 km'},
+        {t:'Mes 6', trail:'18–20 km'},
+        {t:'Después', trail:'Consolidar y bajar carga'},
+      ])
+  },
+];
+
+function renderInfoCards(){
+  const box = document.getElementById('info-cards');
+  box.innerHTML = '';
+  INFO_SECTIONS.forEach(sec=>{
+    const div = document.createElement('div');
+    div.className = 'ios-row';
+    div.innerHTML = `<span class="ic">${svgIcon(sec.icon)}</span>
+      <div class="main"><div class="t">${sec.title}</div><div class="s">${sec.desc}</div></div>
+      <span class="chev">${svgIcon('chevronRight')}</span>`;
+    div.addEventListener('click', ()=> openInfoModal(sec));
+    box.appendChild(div);
+  });
+}
+function openInfoModal(sec){
+  document.getElementById('info-title').innerHTML = `<span class="ic">${svgIcon(sec.icon)}</span> ${sec.title}`;
+  document.getElementById('info-body').innerHTML = sec.html;
+  document.getElementById('info-overlay').classList.add('active');
+}
+document.getElementById('info-close').addEventListener('click', ()=>{
+  document.getElementById('info-overlay').classList.remove('active');
+});
+document.getElementById('info-overlay').addEventListener('click', (e)=>{
+  if(e.target.id === 'info-overlay') document.getElementById('info-overlay').classList.remove('active');
+});
+renderInfoCards();
+
+/* ===================== Metas / plan personalizado ===================== */
+const GOALS = {
+  '5k':   {label:'5K',            km:5,    sub:'5 km'},
+  '10k':  {label:'10K',           km:10,   sub:'10 km'},
+  'half': {label:'Medio maratón', km:21.1, sub:'21.1 km'},
+  'full': {label:'Maratón',       km:42.2, sub:'42.2 km'},
+  'none': {label:'Sin meta fija', km:null, sub:'Solo progresar, sin techo'},
+};
+const PLAN_KEY = 'running-diary:plan-config';
+let planConfig = null;
+let stepKm = 5;
+let selectedGoal = null;
+
+function fmtKm(km){
+  return Number.isInteger(km) ? String(km) : km.toFixed(1);
+}
+function fmtTime(cfg){
+  const h = cfg.timeH||0, m = cfg.timeM||0, s = cfg.timeS||0;
+  const mm = String(m).padStart(2,'0'), ss = String(s).padStart(2,'0');
+  return h>0 ? `${h}:${mm}:${ss}` : `${m}:${ss}`;
+}
+function fmtFechaLarga(iso){
+  return new Date(iso+'T00:00:00').toLocaleDateString('es-AR', {day:'2-digit', month:'long', year:'numeric'});
+}
+function fmtFechaCorta(iso){
+  return new Date(iso+'T00:00:00').toLocaleDateString('es-AR', {day:'2-digit', month:'short', year:'2-digit'});
+}
+function todayISO(){
+  const d = new Date();
+  const tz = d.getTimezoneOffset() * 60000;
+  return new Date(d - tz).toISOString().slice(0,10);
+}
+
+function renderStepKm(){ document.getElementById('km-val').textContent = fmtKm(stepKm); }
+document.getElementById('km-minus').addEventListener('click', ()=>{ stepKm = Math.max(1, Math.round((stepKm-0.5)*2)/2); renderStepKm(); });
+document.getElementById('km-plus').addEventListener('click', ()=>{ stepKm = Math.min(42, Math.round((stepKm+0.5)*2)/2); renderStepKm(); });
+
+function renderGoalCards(){
+  const grid = document.getElementById('goal-grid');
+  grid.innerHTML = '';
+  Object.entries(GOALS).forEach(([key, g])=>{
+    const div = document.createElement('div');
+    div.className = 'goal-card' + (key==='none' ? ' full' : '') + (selectedGoal===key ? ' selected' : '');
+    div.innerHTML = `<b>${g.label}</b><span>${g.sub}</span>`;
+    div.addEventListener('click', ()=>{ selectedGoal = key; renderGoalCards(); });
+    grid.appendChild(div);
+  });
+}
+renderGoalCards();
+
+function openGoalOverlay(prefill){
+  if(prefill && planConfig){
+    stepKm = planConfig.currentKm || 5;
+    selectedGoal = planConfig.goal || null;
+    document.getElementById('t-h').value = planConfig.timeH || 0;
+    document.getElementById('t-m').value = planConfig.timeM || 0;
+    document.getElementById('t-s').value = planConfig.timeS || 0;
+    document.getElementById('goal-fecha').value = planConfig.targetDate || '';
+  } else {
+    stepKm = 5; selectedGoal = null;
+    document.getElementById('t-h').value = 0;
+    document.getElementById('t-m').value = 0;
+    document.getElementById('t-s').value = 0;
+    document.getElementById('goal-fecha').value = '';
+  }
+  renderStepKm();
+  renderGoalCards();
+  document.getElementById('goal-overlay').classList.add('active');
+}
+function closeGoalOverlay(){
+  document.getElementById('goal-overlay').classList.remove('active');
+}
+
+async function loadPlanConfig(){
+  try{
+    const raw = localStorage.getItem(PLAN_KEY);
+    planConfig = raw ? JSON.parse(raw) : null;
+  }catch(e){ planConfig = null; }
+}
+async function savePlanConfig(cfg){
+  planConfig = cfg;
+  try{ localStorage.setItem(PLAN_KEY, JSON.stringify(cfg)); }catch(e){}
+}
+
+document.getElementById('btn-guardar-plan').addEventListener('click', async ()=>{
+  const cfg = {
+    currentKm: stepKm,
+    timeH: parseInt(document.getElementById('t-h').value)||0,
+    timeM: parseInt(document.getElementById('t-m').value)||0,
+    timeS: parseInt(document.getElementById('t-s').value)||0,
+    goal: selectedGoal || 'none',
+    targetDate: document.getElementById('goal-fecha').value || null,
+    startDate: (planConfig && planConfig.startDate) ? planConfig.startDate : todayISO(),
+  };
+  await savePlanConfig(cfg);
+  closeGoalOverlay();
+  renderPlanUI();
+});
+document.getElementById('btn-omitir-plan').addEventListener('click', async ()=>{
+  if(!planConfig){
+    await savePlanConfig({currentKm:5, timeH:0, timeM:0, timeS:0, goal:'none', targetDate:null, startDate: todayISO(), skipped:true});
+  }
+  closeGoalOverlay();
+  renderPlanUI();
+});
+
+/* Semana actual real, según la fecha en que se arrancó el plan */
+function currentWeekNumber(cfg){
+  const start = new Date((cfg.startDate || todayISO())+'T00:00:00');
+  const today = new Date(); today.setHours(0,0,0,0);
+  const diffDays = Math.round((today - start) / (24*3600*1000));
+  return Math.max(1, Math.floor(diffDays/7) + 1);
+}
+function weekRange(startDate, weekIndex){
+  const s = new Date(startDate+'T00:00:00');
+  s.setDate(s.getDate() + (weekIndex-1)*7);
+  const e = new Date(s);
+  e.setDate(e.getDate() + 7);
+  return [s, e];
+}
+
+/* Genera la progresión personalizada en base al punto de partida, el objetivo y el calendario real */
+function buildProgression(cfg){
+  const startKm = cfg.currentKm || 5;
+  const goal = GOALS[cfg.goal] || GOALS.none;
+  const goalKm = goal.km;
+  const startDate = cfg.startDate || todayISO();
+  const curWeek = currentWeekNumber(cfg);
+
+  let weeksTotal;
+  let planEnded = false;
+  if(cfg.targetDate){
+    const start = new Date(startDate+'T00:00:00');
+    const target = new Date(cfg.targetDate+'T00:00:00');
+    weeksTotal = Math.round((target - start) / (7*24*3600*1000));
+    weeksTotal = Math.max(4, Math.min(60, weeksTotal));
+    if(curWeek > weeksTotal) planEnded = true;
+  } else if(goalKm){
+    const neededKm = Math.max(0, goalKm - startKm);
+    const baseWeeks = Math.min(52, Math.max(8, Math.ceil(neededKm/0.8) + 4));
+    weeksTotal = Math.max(baseWeeks, curWeek + 10);
+  } else {
+    weeksTotal = Math.max(14, curWeek + 10);
+  }
+
+  const dischargeEvery = 4;
+  const dischargeWeeks = Math.floor(weeksTotal / dischargeEvery);
+  const progressWeeks = Math.max(1, weeksTotal - dischargeWeeks);
+  const neededKm = goalKm !== null ? Math.max(0, goalKm - startKm) : null;
+  let increment = neededKm !== null ? neededKm / progressWeeks : 1;
+  let ambitious = false;
+  if(increment > 1.5){ increment = 1.5; ambitious = true; }
+  if(increment < 0.3) increment = goalKm !== null ? 0.3 : 1;
+
+  const rows = [];
+  let peak = startKm;
+  let reachedAt = null;
+  for(let i=1; i<=weeksTotal; i++){
+    const isDischarge = (i % dischargeEvery === 0);
+    let km, tipo;
+    if(isDischarge){
+      km = Math.round(peak*0.8*2)/2;
+      tipo = 'descarga';
+    } else if(goalKm !== null && peak >= goalKm - 0.05){
+      km = goalKm;
+      tipo = 'base';
+      if(reachedAt === null) reachedAt = i;
+    } else {
+      peak = Math.round((peak+increment)*2)/2;
+      if(goalKm !== null && peak > goalKm){
+        peak = goalKm;
+        if(reachedAt === null) reachedAt = i;
+      }
+      km = peak;
+      tipo = i===1 ? 'base' : 'progreso';
+    }
+
+    let estado = 'pendiente';
+    if(i === curWeek){
+      estado = 'actual';
+    } else if(i < curWeek){
+      const [wStart, wEnd] = weekRange(startDate, i);
+      const cumplida = entries.some(e=>{
+        const d = new Date(e.fecha+'T00:00:00');
+        return d >= wStart && d < wEnd && e.km >= km*0.9;
+      });
+      estado = cumplida ? 'cumplida' : 'perdida';
+    }
+
+    rows.push({sem:i, km, tipo, estado});
+  }
+  return {rows, ambitious, weeksTotal, goalKm, reachedAt, curWeek, planEnded};
+}
+
+function renderPlanIntro(cfg){
+  const goal = GOALS[cfg.goal] || GOALS.none;
+  const {weeksTotal, goalKm, curWeek, planEnded} = buildProgression(cfg);
+  const box = document.getElementById('plan-intro');
+  const timeStr = (cfg.timeH || cfg.timeM || cfg.timeS) ? ` · ${fmtTime(cfg)}` : '';
+  const titleText = cfg.goal === 'none' ? 'Sin meta fija' : goal.label;
+  const objetivoVal = goalKm === null ? 'Sin techo' : `${fmtKm(goalKm)} km`;
+  const metaVal = cfg.targetDate ? fmtFechaCorta(cfg.targetDate) : '—';
+  const semanaVal = planEnded ? 'Terminó' : `${curWeek} / ${weeksTotal}`;
+
+  box.innerHTML = `
+    <div class="hero-row">
+      <div>
+        <div class="hero-eyebrow">Tu objetivo</div>
+        <div class="hero-title">${titleText}</div>
+      </div>
+      <button class="icon-btn" id="btn-editar-plan" title="Editar">${svgIcon('edit')}</button>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="top">${svgIcon('flag')}<span class="lbl">Hoy corrés</span></div>
+        <div class="val">${fmtKm(cfg.currentKm)} km${timeStr}</div>
+      </div>
+      <div class="stat-card">
+        <div class="top">${svgIcon('target')}<span class="lbl">Meta</span></div>
+        <div class="val">${objetivoVal}</div>
+      </div>
+      <div class="stat-card">
+        <div class="top">${svgIcon('calendar')}<span class="lbl">Fecha</span></div>
+        <div class="val">${metaVal}</div>
+      </div>
+      <div class="stat-card">
+        <div class="top">${svgIcon('clock')}<span class="lbl">Semana</span></div>
+        <div class="val">${semanaVal}</div>
+      </div>
+    </div>
+  `;
+  document.getElementById('btn-editar-plan').addEventListener('click', ()=> openGoalOverlay(true));
+}
+
+function renderProgresion(cfg){
+  const {rows, ambitious, goalKm, reachedAt, curWeek, weeksTotal, planEnded} = buildProgression(cfg);
+  const body = document.getElementById('progresion-body');
+  body.innerHTML = rows.map(p=>{
+    let pillClass, pillLabel;
+    if(p.estado === 'actual'){
+      pillClass = 'actual'; pillLabel = 'Esta semana';
+    } else if(p.estado === 'cumplida'){
+      pillClass = 'cumplida'; pillLabel = 'Cumplida';
+    } else if(p.estado === 'perdida'){
+      pillClass = 'perdida'; pillLabel = 'Sin registro';
+    } else {
+      pillClass = p.tipo; pillLabel = p.tipo.charAt(0).toUpperCase()+p.tipo.slice(1);
+    }
+    const hl = (p.tipo === 'descarga' || p.estado === 'actual');
+    return `<div class="ios-row week-row${hl ? ' hl' : ''}">
+      <div class="wk-n">Sem ${p.sem}</div>
+      <div class="wk-km">${fmtKm(p.km)} km</div>
+      <span class="pill ${pillClass}">${pillLabel}</span>
+    </div>`;
+  }).join('');
+
+  requestAnimationFrame(()=>{
+    const wrap = document.getElementById('progresion-body');
+    const idx = rows.findIndex(r=>r.estado==='actual');
+    if(idx>0 && wrap && wrap.scrollHeight > wrap.clientHeight){
+      const rowH = wrap.scrollHeight / rows.length;
+      wrap.scrollTop = Math.max(0, rowH*idx - rowH*1.5);
+    }
+  });
+
+  const sub = document.getElementById('progresion-sub');
+  const callout = document.getElementById('progresion-callout');
+  let extra = '';
+  if(planEnded){
+    sub.textContent = `Llegaste a la fecha objetivo (semana ${weeksTotal}).`;
+    callout.innerHTML = `<div class="callout warn"><b>Tu fecha de carrera ya llegó (o está esta semana).</b> Entrá a "Editar" para fijar una meta nueva y seguir progresando.</div>`;
+    document.getElementById('progresion-callout').innerHTML = callout.innerHTML;
+    return;
+  } else if(goalKm === null){
+    sub.textContent = `Estás en la semana ${curWeek}. Sin techo: cada semana sumás hasta que decidas frenar o fijar una meta.`;
+    extra = `<div class="callout"><b>Sigue creciendo con vos:</b> este plan no tiene un final fijo. Cuando quieras, poné una meta (5K, 10K, medio o maratón) desde "Editar" para ver una fecha objetivo.</div>`;
+  } else {
+    sub.textContent = `Semana ${curWeek} de ${weeksTotal} · meta ${fmtKm(goalKm)} km.`;
+    extra = reachedAt
+      ? `<div class="callout"><b>Meta alcanzada</b> en la semana ${reachedAt}. Después consolidás en ${fmtKm(goalKm)} km hasta el día de la carrera.</div>`
+      : `<div class="callout"><b>Vas construyendo hacia ${fmtKm(goalKm)} km</b> semana a semana, con descargas cada 4 semanas.</div>`;
+    if(ambitious){
+      extra += `<div class="callout warn"><b>Ojo:</b> con la fecha elegida el aumento semanal necesario es muy alto para hacerlo con seguridad. Este plan lo limita a 1.5 km por semana, así que puede que no llegues exactamente a ${fmtKm(goalKm)} km a tiempo. Si podés, elegí una fecha más lejana.</div>`;
+    }
+  }
+  extra += `<div class="callout"><b>Cómo se marca cada semana:</b> el estado sale directo de lo que cargues en el Diario — si esa semana tiene un entrenamiento con al menos el 90% de la distancia planeada, queda "Cumplida"; si no, "Sin registro". Cuando se acaban las semanas visibles, se generan más solas a medida que avanza el calendario — no hay que hacer nada.</div>`;
+  callout.innerHTML = extra;
+}
+
+function renderPlanUI(){
+  const cfg = planConfig || {currentKm:5, timeH:0, timeM:0, timeS:0, goal:'none', targetDate:null, startDate: todayISO()};
+  renderPlanIntro(cfg);
+  renderProgresion(cfg);
+}
+
+async function initPlan(){
+  await loadPlanConfig();
+  if(!planConfig){
+    openGoalOverlay(false);
+    renderPlanUI();
+  } else {
+    renderPlanUI();
+  }
+}
+
+/* ===================== Tema claro / oscuro ===================== */
+try{
+  const savedTheme = localStorage.getItem('diario-ruta:theme');
+  if(savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+}catch(e){}
+
+function currentTheme(){
+  const attr = document.documentElement.getAttribute('data-theme');
+  if(attr) return attr;
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+document.getElementById('theme-toggle').addEventListener('click', ()=>{
+  const next = currentTheme() === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try{ localStorage.setItem('diario-ruta:theme', next); }catch(e){}
+  if(document.getElementById('view-progreso').classList.contains('active')) renderProgreso();
+});
+
+/* ===================== Tabs ===================== */
+function moveNavIndicator(btn){
+  const ind = document.getElementById('nav-indicator');
+  if(!ind || !btn) return;
+  ind.style.width = btn.offsetWidth + 'px';
+  ind.style.transform = `translateX(${btn.offsetLeft - 4}px)`;
+}
+window.addEventListener('resize', ()=> moveNavIndicator(document.querySelector('.tab-btn.active')));
+requestAnimationFrame(()=> moveNavIndicator(document.querySelector('.tab-btn.active')));
+
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+    btn.classList.add('active');
+    moveNavIndicator(btn);
+    document.getElementById('view-'+btn.dataset.view).classList.add('active');
+    if(btn.dataset.view === 'progreso') renderProgreso();
+  });
+});
+
+/* ===================== Diario ===================== */
+async function loadEntries(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    entries = raw ? JSON.parse(raw) : [];
+  }catch(e){
+    entries = [];
+  }
+  renderEntries();
+}
+
+async function saveEntries(){
+  try{
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+  }catch(e){
+    console.error('No se pudo guardar', e);
+  }
+}
+
+document.getElementById('f-fecha').valueAsDate = new Date();
+
+function ritmoSegPorKm(km, tiempoSeg){
+  if(!tiempoSeg || !km) return null;
+  return tiempoSeg / km;
+}
+function fmtRitmo(segPorKm){
+  if(segPorKm === null || segPorKm === undefined || !isFinite(segPorKm)) return '–';
+  const m = Math.floor(segPorKm/60);
+  const s = Math.round(segPorKm%60);
+  return `${m}:${String(s).padStart(2,'0')}/km`;
+}
+
+document.getElementById('btn-add').addEventListener('click', async ()=>{
+  const fecha = document.getElementById('f-fecha').value;
+  const km = parseFloat(document.getElementById('f-km').value);
+  const th = parseInt(document.getElementById('f-th').value)||0;
+  const tm = parseInt(document.getElementById('f-tm').value)||0;
+  const ts = parseInt(document.getElementById('f-ts').value)||0;
+  const tipo = document.getElementById('f-tipo').value;
+  const sensacion = document.getElementById('f-sensacion').value;
+  const notas = document.getElementById('f-notas').value.trim();
+
+  if(!fecha || !km || km <= 0){
+    alert('Poné al menos la fecha y la distancia.');
+    return;
+  }
+  const tiempoSeg = (th*3600 + tm*60 + ts) || null;
+
+  entries.unshift({
+    id: Date.now().toString(),
+    fecha, km, tipo, sensacion, notas, tiempoSeg
+  });
+  entries.sort((a,b)=> new Date(b.fecha) - new Date(a.fecha));
+
+  await saveEntries();
+  renderEntries();
+  renderPlanUI();
+
+  document.getElementById('f-km').value = '';
+  document.getElementById('f-th').value = '';
+  document.getElementById('f-tm').value = '';
+  document.getElementById('f-ts').value = '';
+  document.getElementById('f-notas').value = '';
+});
+
+function fmtFecha(iso){
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('es-AR', {day:'2-digit', month:'short'});
+}
+
+function renderEntries(){
+  const list = document.getElementById('entries-list');
+  list.innerHTML = '';
+  if(entries.length === 0){
+    list.innerHTML = '<div class="empty">Todavía no cargaste ningún entrenamiento.<br>Registrá el primero arriba.</div>';
+    return;
+  }
+  entries.forEach(en=>{
+    const div = document.createElement('div');
+    div.className = 'entry';
+    const ritmoTxt = en.tiempoSeg ? fmtRitmo(ritmoSegPorKm(en.km, en.tiempoSeg)) : null;
+    div.innerHTML = `
+      <div class="km-box"><b>${en.km}</b><span>km</span></div>
+      <div class="info">
+        <div class="top"><span class="date">${fmtFecha(en.fecha)}</span><span>·</span><span>${en.tipo}</span>${ritmoTxt?`<span>·</span><span class="ritmo">${ritmoTxt}</span>`:''}<span>·</span><span>${en.sensacion}</span></div>
+        ${en.notas ? `<div class="notas">${en.notas}</div>` : ''}
+      </div>
+      <button class="del" data-id="${en.id}" title="Borrar">${svgIcon('trash')}</button>
+    `;
+    list.appendChild(div);
+  });
+  list.querySelectorAll('.del').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      entries = entries.filter(e=>e.id !== btn.dataset.id);
+      await saveEntries();
+      renderEntries();
+      renderPlanUI();
+    });
+  });
+}
+
+function renderProgresoStats(){
+  const box = document.getElementById('progreso-stats');
+  box.innerHTML = `
+    <div class="stat-card">
+      <div class="top">${svgIcon('flag')}<span class="lbl">Total</span></div>
+      <div class="val" id="st-total">0 km</div>
+    </div>
+    <div class="stat-card">
+      <div class="top">${svgIcon('bars')}<span class="lbl">Entrenamientos</span></div>
+      <div class="val" id="st-count">0</div>
+    </div>
+    <div class="stat-card">
+      <div class="top">${svgIcon('mountain')}<span class="lbl">Fondo máximo</span></div>
+      <div class="val" id="st-max">–</div>
+    </div>
+    <div class="stat-card">
+      <div class="top">${svgIcon('stopwatch')}<span class="lbl">Último fondo</span></div>
+      <div class="val" id="st-ultimo">–</div>
+    </div>
+    <div class="stat-card">
+      <div class="top">${svgIcon('clock')}<span class="lbl">Ritmo prom.</span></div>
+      <div class="val" id="st-ritmo-prom">–</div>
+    </div>
+    <div class="stat-card">
+      <div class="top">${svgIcon('bolt')}<span class="lbl">Mejor ritmo</span></div>
+      <div class="val" id="st-ritmo-best">–</div>
+    </div>
+  `;
+}
+renderProgresoStats();
+
+let progresoMetric = 'km';
+document.getElementById('metric-toggle').addEventListener('click', (e)=>{
+  const btn = e.target.closest('.metric-btn');
+  if(!btn) return;
+  progresoMetric = btn.dataset.metric;
+  document.querySelectorAll('.metric-btn').forEach(b=>b.classList.toggle('active', b===btn));
+  document.getElementById('chart-title').textContent = progresoMetric==='km' ? 'Evolución del fondo largo' : 'Evolución del ritmo';
+  renderProgreso();
+});
+
+function renderProgreso(){
+  const total = entries.reduce((s,e)=>s+e.km, 0);
+  document.getElementById('st-total').textContent = total.toFixed(1) + ' km';
+  document.getElementById('st-count').textContent = entries.length;
+
+  const fondos = entries.filter(e=>e.tipo === 'Fondo largo').sort((a,b)=> new Date(a.fecha)-new Date(b.fecha));
+  const ultimo = fondos.length ? fondos[fondos.length-1] : null;
+  document.getElementById('st-ultimo').textContent = ultimo ? ultimo.km + ' km' : '–';
+  const max = fondos.length ? Math.max(...fondos.map(f=>f.km)) : null;
+  document.getElementById('st-max').textContent = max !== null ? max + ' km' : '–';
+
+  const conRitmo = entries.filter(e=>e.tiempoSeg && e.km);
+  if(conRitmo.length){
+    const ritmos = conRitmo.map(e=> e.tiempoSeg / e.km);
+    const prom = ritmos.reduce((a,b)=>a+b,0)/ritmos.length;
+    const best = Math.min(...ritmos);
+    document.getElementById('st-ritmo-prom').textContent = fmtRitmo(prom);
+    document.getElementById('st-ritmo-best').textContent = fmtRitmo(best);
+  } else {
+    document.getElementById('st-ritmo-prom').textContent = '–';
+    document.getElementById('st-ritmo-best').textContent = '–';
+  }
+
+  const cs = getComputedStyle(document.documentElement);
+  const cInk = cs.getPropertyValue('--ink-dim').trim() || '#90A19D';
+  const cLine = cs.getPropertyValue('--line').trim() || 'rgba(230,240,236,.08)';
+  const cAccent = cs.getPropertyValue('--accent').trim() || '#8FC0AA';
+  const cPanel = cs.getPropertyValue('--panel-2').trim() || '#1E2A2C';
+
+  const svg = document.getElementById('chart-svg');
+  svg.innerHTML = '';
+
+  let dataset, valFn, fmtVal;
+  if(progresoMetric === 'km'){
+    dataset = fondos;
+    valFn = f=>f.km;
+    fmtVal = v=>v.toFixed(0);
+  } else {
+    dataset = entries.filter(e=>e.tiempoSeg && e.km).sort((a,b)=> new Date(a.fecha)-new Date(b.fecha));
+    valFn = e=> e.tiempoSeg / e.km;
+    fmtVal = v=> Math.round(v/60)+"'";
+  }
+
+  if(dataset.length < 2){
+    const msg = progresoMetric==='km' ? 'Registrá al menos 2 fondos para ver el gráfico' : 'Cargá el tiempo en el Diario para ver tu evolución de ritmo';
+    svg.innerHTML = `<text x="340" y="110" text-anchor="middle" fill="${cInk}" font-size="12">${msg}</text>`;
+    return;
+  }
+  const w = 680, h = 220, padL = 36, padR = 16, padT = 16, padB = 30;
+  const vals = dataset.map(valFn);
+  const maxV = Math.max(...vals) * 1.15;
+  const minV = progresoMetric==='ritmo' ? Math.min(...vals) * 0.9 : 0;
+  const xStep = (w - padL - padR) / (dataset.length - 1);
+
+  const pts = dataset.map((f,i)=>{
+    const v = valFn(f);
+    const x = padL + i*xStep;
+    const y = padT + (h - padT - padB) * (1 - (v - minV)/(maxV - minV));
+    return {x, y, v, fecha:f.fecha};
+  });
+
+  [0,0.5,1].forEach(frac=>{
+    const y = padT + (h-padT-padB)*(1-frac);
+    const val = minV + (maxV-minV)*frac;
+    svg.innerHTML += `<line x1="${padL}" y1="${y}" x2="${w-padR}" y2="${y}" stroke="${cLine}" stroke-width="1"/>`;
+    svg.innerHTML += `<text x="${padL-8}" y="${y+4}" text-anchor="end" fill="${cInk}" font-size="10">${fmtVal(val)}</text>`;
+  });
+
+  const path = pts.map((p,i)=> (i===0?'M':'L') + p.x.toFixed(1) + ',' + p.y.toFixed(1)).join(' ');
+  svg.innerHTML += `<path d="${path}" fill="none" stroke="${cAccent}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>`;
+
+  pts.forEach(p=>{
+    svg.innerHTML += `<circle cx="${p.x}" cy="${p.y}" r="4" fill="${cPanel}" stroke="${cAccent}" stroke-width="2.5"/>`;
+  });
+  pts.forEach((p,i)=>{
+    if(i===0 || i===pts.length-1 || i%Math.ceil(pts.length/6)===0){
+      svg.innerHTML += `<text x="${p.x}" y="${h-10}" text-anchor="middle" fill="${cInk}" font-size="9.5">${fmtFecha(p.fecha)}</text>`;
+    }
+  });
+}
+
+loadEntries();
+initPlan();
+
+/* ===================== PWA: service worker (uso offline, icono propio) ===================== */
+if('serviceWorker' in navigator){
+  window.addEventListener('load', ()=>{
+    navigator.serviceWorker.register('sw.js').catch(()=>{});
+  });
+}
+</script>
+
+</body></html>
